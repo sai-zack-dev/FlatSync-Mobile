@@ -10,13 +10,14 @@ const AppNavigator: React.FC = () => {
 
   return (
     <NavigationContainer>
-      {isNewUser ? (
+      {/* {isNewUser ? (
         <OnboardingStack setIsNewUser={setIsNewUser} />
       ) : isAuthenticated ? (
         <TabNavigator />
       ) : (
         <AuthStack setIsAuthenticated={setIsAuthenticated} />
-      )}
+      )} */}
+      <OnboardingStack />
     </NavigationContainer>
   );
 };

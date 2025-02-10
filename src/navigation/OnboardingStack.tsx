@@ -1,29 +1,26 @@
+// OnboardingStack.tsx
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import WelcomeScreen from "../screens/Onboarding/WelcomeScreen";
-import AboutAppScreen from "../screens/Onboarding/AboutAppScreen";
-import GetStartScreen from "../screens/Onboarding/GetStartScreen";
+import WelcomeScreen from "../screens/OnBoarding/WelcomeScreen";
+import IntroScreen from "../screens/OnBoarding/IntroScreen";
+import GetStartScreen from "../screens/OnBoarding/GetStartScreen";
 
-type OnboardingStackParamList = {
+export type RootStackParamList = {
   Welcome: undefined;
-  AboutApp: undefined;
+  Intro: undefined;
   GetStart: undefined;
+  Home: undefined;
 };
 
-const Stack = createStackNavigator<OnboardingStackParamList>();
+const Stack = createStackNavigator<RootStackParamList>();
 
-const OnboardingStack: React.FC<{ setIsNewUser: (value: boolean) => void }> = ({
-  setIsNewUser,
-}) => {
+const OnboardingStack: React.FC = () => {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Welcome" component={WelcomeScreen} />
-      <Stack.Screen name="AboutApp" component={AboutAppScreen} />
-      <Stack.Screen
-        name="GetStart"
-        children={(props) => <GetStartScreen {...props} setIsNewUser={setIsNewUser} />}
-      />
-    </Stack.Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen name="Intro" component={IntroScreen} />
+        <Stack.Screen name="GetStart" component={GetStartScreen} />
+      </Stack.Navigator>
   );
 };
 
