@@ -26,16 +26,37 @@ const OnboardingTemplate: React.FC<OnboardingTemplateProps> = ({
       <Image source={image} style={onboarding.image} />
       <View style={onboarding.info}>
         <View>
-            <Text style={onboarding.title}>{title}</Text>
-            <Text style={onboarding.text}>{text}</Text>
+          <Text style={onboarding.title}>{title}</Text>
+          <Text style={onboarding.text}>{text}</Text>
         </View>
         <View style={onboarding.buttonContainer}>
-            <View>
+          {next !== "Auth" ? (
+            <>
+              <View>
                 {previous && (
-                <Button title="<< Previous" onPress={() => navigation.goBack()} />
+                  <Button
+                    title="<< Previous"
+                    onPress={() => navigation.goBack()}
+                  />
                 )}
-            </View>
-            <Button title="Next >>" onPress={() => navigation.navigate(next)} />
+              </View>
+              <Button
+                title="Next >>"
+                onPress={() => navigation.navigate(next)}
+              />
+            </>
+          ) : (
+            <>
+              <Button
+                title="Log In"
+                onPress={() => navigation.navigate('AuthStack', { screen: 'Login' })}
+              />
+              <Button
+                title="Sign Up"
+                onPress={() => navigation.navigate('AuthStack', { screen: 'SignUp' })}
+              />
+            </>
+          )}
         </View>
       </View>
     </View>

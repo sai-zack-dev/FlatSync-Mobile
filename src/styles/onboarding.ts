@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const welcomeScreenStyles = StyleSheet.create({
+const onboardingStyles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
@@ -34,4 +34,4 @@ const welcomeScreenStyles = StyleSheet.create({
   }
 });
 
-export default welcomeScreenStyles;
+export default onboardingStyles;

@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import SignUpScreen from "../screens/Auth/SignUpScreen";
 import LoginScreen from "../screens/Auth/LoginScreen";
 
-type AuthStackParamList = {
+export type AuthStackParamList = {
   SignUp: undefined;
   Login: undefined;
 };
@@ -16,10 +16,7 @@ const AuthStack: React.FC<{ setIsAuthenticated: (value: boolean) => void }> = ({
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="SignUp" component={SignUpScreen} />
-      <Stack.Screen
-        name="Login"
-        children={(props) => <LoginScreen {...props} setIsAuthenticated={setIsAuthenticated} />}
-      />
+      <Stack.Screen name="Login" children={LoginScreen} />
     </Stack.Navigator>
   );
 };

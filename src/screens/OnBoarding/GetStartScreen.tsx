@@ -15,8 +15,10 @@ const GetStartScreen: React.FC<GetStartScreenProps> = ({ navigation }) => {
       title={"Get Started"}
       text={"Make living together easier and more enjoyable with FlatSync!"}
       bg={colors.frost_veil}
-      previous={true}
-      next={"Welcome"}
+      // previous={true}
+      // next={"Welcome"}
+      previous={false}
+      next={"Auth"}
       navigation={navigation}
     />
   );
