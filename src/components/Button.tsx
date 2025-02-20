@@ -7,11 +7,14 @@ interface ButtonProps {
   bg?: string;
   title: string;
   bold?: boolean;
+  onPress?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ color, bg = "#fff", title, bold }) => {
+const Button: React.FC<ButtonProps> = ({ color, bg = "#fff", title, bold, onPress }) => {
   return (
-    <TouchableOpacity style={[global.button, {backgroundColor: bg }]}>
+    <TouchableOpacity
+    onPress={onPress}
+    style={[global.button, {backgroundColor: bg }]}>
         <Text style={[global.buttonTitle, {color: color, fontWeight: bold ? "bold" : "normal"}]}>{title}</Text>
     </TouchableOpacity>
   )

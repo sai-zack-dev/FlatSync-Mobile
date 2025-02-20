@@ -26,6 +26,7 @@ const AuthScreenTemplate: React.FC<AuthScreenTemplateProps> = ({
         <Input placeholder="Email" />
         <Input placeholder="Password" password />
         <Button
+          onPress={() => navigation.navigate("TabNavigator", {screen: "Home"})}
           color={colors.secondary}
           bg={colors.primary}
           title="Submit"

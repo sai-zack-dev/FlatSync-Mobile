@@ -29,6 +29,7 @@ const AppNavigator: React.FC = () => {
             <AuthStack setIsAuthenticated={setIsAuthenticated} />
           )}
         />
+        <RootStack.Screen name="TabNavigator" component={TabNavigator} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

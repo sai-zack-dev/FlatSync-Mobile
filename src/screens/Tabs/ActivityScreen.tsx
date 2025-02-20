@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const FlatScreen = () => {
+const ActivityScreen = () => {
   return (
     <View>
-      <Text>FlatScreen</Text>
+      <Text>ActivityScreen</Text>
     </View>
   )
 }
 
-export default FlatScreen
+export default ActivityScreen
