@@ -4,7 +4,6 @@
 <p align="center">
   <a href="https://expo.dev" target="_blank"><img src="https://img.shields.io/badge/Expo-~52.0.27-blue.svg" alt="Expo Version" /></a>
   <a href="https://reactnative.dev" target="_blank"><img src="https://img.shields.io/badge/React%20Native-0.76.6-blue.svg" alt="React Native Version" /></a>
-<a href="https://www.npmjs.com/package/%40react-navigation/bottom-tabs" target="_blank"> <img src="https://img.shields.io/npm/v/%40react-navigation/bottom-tabs.svg" alt="@react-navigation/bottom-tabs Version" /> </a> <a href="https://www.npmjs.com/package/@types/react-native-linear-gradient" target="_blank"> <img src="https://img.shields.io/npm/v/@types/react-native-linear-gradient.svg" alt="@types/react-native-linear-gradient Version" /> </a> <a href="https://www.npmjs.com/package/expo-status-bar" target="_blank"> <img src="https://img.shields.io/npm/v/expo-status-bar.svg" alt="expo-status-bar Version" /> </a> <a href="https://www.npmjs.com/package/react" target="_blank"> <img src="https://img.shields.io/npm/v/react.svg" alt="React Version" /> </a> <a href="https://www.npmjs.com/package/react-hook-form" target="_blank"> <img src="https://img.shields.io/npm/v/react-hook-form.svg" alt="react-hook-form Version" /> </a> <a href="https://www.npmjs.com/package/react-native-gesture-handler" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-gesture-handler.svg" alt="react-native-gesture-handler Version" /> </a> <a href="https://www.npmjs.com/package/react-native-linear-gradient" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-linear-gradient.svg" alt="react-native-linear-gradient Version" /> </a> <a href="https://www.npmjs.com/package/react-native-reanimated" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-reanimated.svg" alt="react-native-reanimated Version" /> </a> <a href="https://www.npmjs.com/package/react-native-safe-area-context" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-safe-area-context.svg" alt="react-native-safe-area-context Version" /> </a> <a href="https://www.npmjs.com/package/react-native-screens" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-screens.svg" alt="react-native-screens Version" /> </a> <a href="https://www.npmjs.com/package/react-native-svg" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-svg.svg" alt="react-native-svg Version" /> </a> <a href="https://www.npmjs.com/package/react-native-vector-icons" target="_blank"> <img src="https://img.shields.io/npm/v/react-native-vector-icons.svg" alt="react-native-vector-icons Version" /> </a>
 
 </p>
 
@@ -87,8 +86,9 @@ Follow these steps to get your development environment set up:
 
 ## Design & Prototypes
 
--   **Wireframes:** Refer to the [images] directory for detailed wireframes.
--   **Prototypes:** Preview interactive designs in the [preview images] directory.
+**Wireframes:** 
+![Wireframe](./src/assets/images/wireframes.png)
+**Prototype:** https://www.figma.com/proto/iN0IdDQdUBO1ZIUyVAYGRE/FlatSync?node-id=20-274&t=XGk7eCHUZwSyZ7SY-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=20%3A274
 
 ----------
 
@@ -100,3 +100,4 @@ The **Serene Blues** palette is chosen to convey reliability, calmness, and bala
 -   **Secondary:** Deep Navy `#2C3E50`
 -   **Accent:** Seafoam Green `#2ECC71`
 -   **Neutral:** Light Gray `#ECF0F1`
+![Color Palette](./src/assets/images/color.png)
