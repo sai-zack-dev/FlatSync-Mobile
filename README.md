@@ -100,4 +100,5 @@ The **Serene Blues** palette is chosen to convey reliability, calmness, and bala
 -   **Secondary:** Deep Navy `#2C3E50`
 -   **Accent:** Seafoam Green `#2ECC71`
 -   **Neutral:** Light Gray `#ECF0F1`
+
 ![Color Palette](./src/assets/images/color.png)
